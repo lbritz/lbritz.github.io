@@ -55,7 +55,6 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         buildHomeSection(homeSection);
         navbarAnimation(navbar, homeSection, navHeight);
-        navbarSubmenu(width);
         hoverDropdown(width, mobileTest);
 
         $(window).resize(function() {
@@ -160,32 +159,6 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 } else {
                     navbar.addClass('navbar-transparent');
                 }
-            }
-        }
-
-        /* ---------------------------------------------- /*
-         * Navbar submenu
-         /* ---------------------------------------------- */
-
-        function navbarSubmenu(width) {
-            if (width > 767) {
-                $('.navbar-custom .navbar-nav > li.dropdown').hover(function() {
-                    var MenuLeftOffset  = $('.dropdown-menu', $(this)).offset().left;
-                    var Menu1LevelWidth = $('.dropdown-menu', $(this)).width();
-                    if (width - MenuLeftOffset < Menu1LevelWidth * 2) {
-                        $(this).children('.dropdown-menu').addClass('leftauto');
-                    } else {
-                        $(this).children('.dropdown-menu').removeClass('leftauto');
-                    }
-                    if ($('.dropdown', $(this)).length > 0) {
-                        var Menu2LevelWidth = $('.dropdown-menu', $(this)).width();
-                        if (width - MenuLeftOffset - Menu1LevelWidth < Menu2LevelWidth) {
-                            $(this).children('.dropdown-menu').addClass('left-side');
-                        } else {
-                            $(this).children('.dropdown-menu').removeClass('left-side');
-                        }
-                    }
-                });
             }
         }
 
