@@ -1453,7 +1453,7 @@ General Styles - Owlcarousel
 /* Landing Page Header */
 .landing-header:before {
   position: absolute;
-  background: linear-gradient(to bottom, rgba(0, 138, 177, 0.80) 0%, rgba(254, 126, 1, 0.8) 80%);
+  background: linear-gradient(to bottom, rgba(181, 193, 189) 0%, rgba(254, 126, 1, 0.8) 40%);
   content: " ";
   height: 100%;
   width: 100%;
@@ -3100,4 +3100,51 @@ Vertical Timeline
     left: -14px;
     right: auto;
   }
+}
+
+/* ------------------------------------------
+Login Page
+ ----------------------------------------- */
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icons {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 1rem;
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1508717334315-37b159f24d04?ixlib=rb-0.3.5&s=dba2649ebdceb41cabadc97137abdade&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.text--center {
+  text-align: center;
+}
+
+button:hover {
+  background-color: #f5f7f9;
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+input:focus {
+  background-color: white;
+  width: 300px;
 }

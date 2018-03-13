@@ -38,6 +38,15 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         });
 
 
+
+
+        $("#login-button").click(function(event){
+            event.preventDefault();
+
+            $('form').fadeOut(500);
+            $('.wrapper').addClass('form-success');
+        });
+
         /* ---------------------------------------------- /*
          * Initialization General Scripts for all pages
          /* ---------------------------------------------- */
