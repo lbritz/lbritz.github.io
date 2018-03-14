@@ -422,10 +422,6 @@ a,
   margin-bottom: 20px !important;
 }
 
-.mb-30 {
-  margin-bottom: 30px !important;
-}
-
 .mb-40 {
   margin-bottom: 40px !important;
 }
@@ -891,7 +887,10 @@ blockquote {
 .font-alt {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+}
+
+.slogan {
+  font-size: 20px;
 }
 
 .font-serif {
@@ -1110,6 +1109,7 @@ Hero Slider
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  background: rgba(254, 126, 1, 0.8) 10%;
 }
 
 .caption-content {
@@ -1362,10 +1362,14 @@ General Styles - Owlcarousel
   font-size: 46px;
 }
 
+.barcode-font {
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+}
+
 .titan-title-size-4 {
-  letter-spacing: 24px;
-  font-weight: 400;
-  font-size: 48px;
+  letter-spacing: 10px;
+  font-weight: lighter;
+  font-size: 150px;
 }
 
 /* Agency Page Header */
@@ -1453,7 +1457,9 @@ General Styles - Owlcarousel
 /* Landing Page Header */
 .landing-header:before {
   position: absolute;
-  background: linear-gradient(to bottom, rgba(181, 193, 189) 0%, rgba(254, 126, 1, 0.8) 40%);
+  background-image: url("https://static.pexels.com/photos/375889/pexels-photo-375889.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
   content: " ";
   height: 100%;
   width: 100%;
@@ -2728,7 +2734,7 @@ Google map
   }
   .titan-title-size-4 {
     letter-spacing: 12px;
-    font-size: 38px;
+    font-size: 100px;
   }
   .work-item,
   .works-grid-3 .work-item,
@@ -2823,7 +2829,7 @@ Google map
   }
   .titan-title-size-4 {
     letter-spacing: 6px;
-    font-size: 28px;
+    font-size: 100px;
   }
   /* Features */
   .features-item {
