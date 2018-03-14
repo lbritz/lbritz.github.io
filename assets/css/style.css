@@ -1457,7 +1457,7 @@ General Styles - Owlcarousel
 /* Landing Page Header */
 .landing-header:before {
   position: absolute;
-  background-image: url("https://static.pexels.com/photos/375889/pexels-photo-375889.jpeg");
+  background-image: url("../../assets/images/homePageBanner.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   content: " ";
@@ -3130,7 +3130,7 @@ Login Page
   width: 1em;
 }
 
-body {
+.login-background {
   background-image: url('https://images.unsplash.com/photo-1508717334315-37b159f24d04?ixlib=rb-0.3.5&s=dba2649ebdceb41cabadc97137abdade&auto=format&fit=crop&w=1050&q=80');
   background-size: cover;
   background-repeat: no-repeat;
@@ -3438,16 +3438,8 @@ h1.team-h1 {
   *zoom: 1;
 }
 
-@media (max-width: 2851px){
 .team-container {
   max-width: 1000px;
-  margin: auto;
-  position: relative;
-}
-
-@media (max-width:850px){
-.team-container {
-  max-width: 800px;
   margin: auto;
   position: relative;
 }
