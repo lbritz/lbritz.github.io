@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Venture iO</title>
+
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
@@ -16,72 +20,138 @@
     <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
     <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-<div class="page-loader">
-    <div class="loader">Loading...</div>
-</div>
-<div class="container">
-    <div class="page-header">
-        <h1 id="timeline">Histórico de Compras</h1>
+<main>
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
     </div>
-    <ul class="timeline">
-        <li class="timeline-inverted">
-            <div class="timeline-badge success"><i class="glyphicon glyphicon-euro"></i></div>
-            <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                </div>
-                <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
-                        vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.
-                        Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
-                </div>
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand barcode-font" href="index.html">DELI</a>
             </div>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge success"><i class="glyphicon glyphicon-credit-card"></i></div>
-            <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                </div>
-                <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
-                        vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.
-                        Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
-                    <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé,
-                        cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a,
-                        posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper.
-                        Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque
-                        laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo
-                        massa.</p>
-                </div>
+            <div class="collapse navbar-collapse" id="custom-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" href="login.html">Login</a></li>
+                </ul>
             </div>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-            <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+    </nav>
+    <section class="transaction-section home-fade home-full-height colored">
+        <div class="container transaction-page-header">
+            <h3>Hello, Person's name</h3>
+            <h5>*Dash with total spent each time the customer goes to mkt*</h5>
+        </div>
+    </section>
+    <div class="container transaction-history">
+        <ul class="timeline">
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
                 </div>
-                <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                        porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
-                        vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.
-                        Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
-</div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge info"></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Market ACME</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>R$40,00</p>
+                        <p>11/03/2018</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
 <script src="assets/lib/jquery/dist/jquery.js"></script>
 <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/lib/wow/dist/wow.js"></script>

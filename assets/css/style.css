@@ -1338,11 +1338,22 @@ General Styles - Owlcarousel
 .home-section {
   position: relative;
   background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
-  z-index: 0;
   background-size: cover;
+}
+
+.transaction-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+@media(max-width: 850px) {
+    .transaction-section {
+        .h2 {
+            font-size: 100px;
+        }
+    }
 }
 
 .titan-title-size-1 {
@@ -2925,7 +2936,7 @@ Download app hover icons
 
 
 .colored {
-  background-color: rgba(254, 126, 1, 0.8);
+  background-color: rgb(254, 126, 1);
 }
 
 /* ------------------------------------
@@ -2977,46 +2988,21 @@ Vertical Timeline
   padding: 20px;
 }
 
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-
 .timeline > li > .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 16px;
-  margin-left: -25px;
-  background-color: #999999;
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    margin-left: -7px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* border-bottom-left-radius: 50%; */
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -3031,23 +3017,8 @@ Vertical Timeline
   right: auto;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
 .timeline-badge.primary {
   background-color: #2e6da4 !important;
-}
-
-.timeline-badge.success {
-  background-color: #3f903f !important;
-}
-
-.timeline-badge.warning {
-  background-color: #f0ad4e !important;
 }
 
 .timeline-badge.danger {
@@ -3055,7 +3026,7 @@ Vertical Timeline
 }
 
 .timeline-badge.info {
-  background-color: #5bc0de !important;
+  background-color: rgb(254, 126, 1) !important;
 }
 
 .timeline-title {
@@ -3084,27 +3055,13 @@ Vertical Timeline
   }
 
   ul.timeline > li > .timeline-badge {
-    left: 15px;
-    margin-left: 0;
-    top: 16px;
+      left: 34px;
+      margin-left: 0;
+      top: 23px;
   }
 
   ul.timeline > li > .timeline-panel {
     float: right;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
   }
 }
 
@@ -3522,3 +3479,13 @@ h1.team-h1 {
 
 /* ENDS Team Member CSS
 ===========================*/
+.transaction-history {
+    background-color: white;
+}
+
+.transaction-page-header {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    .h2 {
+        color: white;
+    }
+}
