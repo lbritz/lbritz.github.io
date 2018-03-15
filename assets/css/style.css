@@ -893,6 +893,12 @@ blockquote {
   font-size: 20px;
 }
 
+@media (max-width: 850px) {
+    .slogan {
+        font-size: 15px;
+    }
+}
+
 .font-serif {
   font-family: Volkhov, "Times New Roman", sans-serif;
   font-style: italic;
@@ -1369,8 +1375,8 @@ General Styles - Owlcarousel
 }
 
 .titan-title-size-3 {
-  letter-spacing: 16px;
-  font-size: 46px;
+  font-size: 60px;
+  color: white;
 }
 
 .barcode-font {
@@ -1476,6 +1482,12 @@ General Styles - Owlcarousel
   width: 100%;
   left: 0;
   top: 0;
+}
+
+@media (max-width: 975px) {
+    .landing-header:before {
+        background-position: center;
+    }
 }
 
 .banner-img {
@@ -2686,6 +2698,7 @@ Google map
     padding-bottom: 15px;
     padding-top: 15px;
   }
+
   .navbar-custom .dropdown-menu {
     position: absolute;
     display: block;
@@ -2739,10 +2752,6 @@ Google map
     letter-spacing: 0;
   }
   /* Headers */
-  .titan-title-size-3 {
-    letter-spacing: 8px;
-    font-size: 36px;
-  }
   .titan-title-size-4 {
     letter-spacing: 12px;
     font-size: 100px;
@@ -2833,10 +2842,6 @@ Google map
     letter-spacing: 2px;
     font-size: 16px;
     opacity: .8;
-  }
-  .titan-title-size-3 {
-    letter-spacing: 4px;
-    font-size: 26px;
   }
   .titan-title-size-4 {
     letter-spacing: 6px;
@@ -3043,7 +3048,7 @@ Vertical Timeline
   margin-top: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1767px) {
   ul.timeline:before {
     left: 40px;
   }
@@ -3088,12 +3093,19 @@ Login Page
 }
 
 .login-background {
-  background-image: url('https://images.unsplash.com/photo-1508717334315-37b159f24d04?ixlib=rb-0.3.5&s=dba2649ebdceb41cabadc97137abdade&auto=format&fit=crop&w=1050&q=80');
+  background-image: url("../../assets/images/loginPage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+    width: 100%;
   margin: 0;
   min-height: 100vh;
+}
+
+@media (max-width: 975px) {
+    .login-background {
+        background-position: center;
+    }
 }
 
 .text--center {
@@ -3489,3 +3501,5 @@ h1.team-h1 {
         color: white;
     }
 }
+
+
