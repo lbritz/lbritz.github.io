@@ -2,6 +2,7 @@
 var aList    = [];
 var aItems   = [];
 
+/*
 $(document).ready(function () {
 
     $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
@@ -92,7 +93,7 @@ $(document).ready(function () {
         getShoppingData();
     });
 });
-
+*/
 function getShoppingData(){
 
      $.getJSON("../assets/data/segmentBCustomerData.json", function (data) {
