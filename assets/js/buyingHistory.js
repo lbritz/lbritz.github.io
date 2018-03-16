@@ -177,8 +177,8 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     part5dt.appendChild(part5i);
     part5dt.appendChild(text5);
 
-    let part2dd = constructElement("dd", "product-card");
-    part2dd.append(sQuantity);
+    let part5dd = constructElement("dd", "product-card");
+    part5dd.append(sQuantity);
 
     let part3dt = constructElement("dt", "product-card");
     let text3   = document.createTextNode(" Selling Price:");
@@ -203,6 +203,8 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     descriptionList.appendChild(part1dd);
     descriptionList.appendChild(part2dt);
     descriptionList.appendChild(part2dd);
+    descriptionList.appendChild(part5dt);
+    descriptionList.appendChild(part5dd);
     descriptionList.appendChild(part3dt);
     descriptionList.appendChild(part3dd);
     descriptionList.appendChild(part4dt);
@@ -217,16 +219,12 @@ function filterItemCard(e){
     var cupom = e.currentTarget.parentElement.getAttribute("cupom");
 
     /*
-    removechildren;
-
-    var cupom = ;
-    // pegar o cupom
-    var done = false;
-    for (var i=0, i<aItems.length; i++){
-        if (aItems[i].Cupom === cupom){
+    removechildren;    
+    
+    */
+    for (var i=0; i<aItems.length; i++){
+        if (aItems[i].Cupom === parseInt(cupom)){
             crateItemCard(aItems[i].product, aItems[i].description, aItems[i].quantity, aItems[i].selling, aItems[i].price);
         }
     }
-    */
-    console.log("teste");
 }
