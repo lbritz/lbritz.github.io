@@ -2,7 +2,7 @@
 var aList    = [];
 var aItems   = [];
 
-/*
+
 $(document).ready(function () {
 
     $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
@@ -93,7 +93,7 @@ $(document).ready(function () {
         getShoppingData();
     });
 });
-*/
+
 function getShoppingData(){
 
      $.getJSON("../assets/data/segmentBCustomerData.json", function (data) {
@@ -204,7 +204,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
 
     element.appendChild(descriptionList);
 }
-
+/*
 function filterItemCard(e){
     removechildren;
 
@@ -216,4 +216,4 @@ function filterItemCard(e){
             crateItemCard(aItems[i].product, aItems[i].description, aItems[i].quantity, aItems[i].selling, aItems[i].price);
         }
     }
-}
+}*/
