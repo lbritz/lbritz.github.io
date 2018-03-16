@@ -92,8 +92,9 @@ function teste(){
                 Filial  = item['Filial'];
                 Segment = item['Segment'];
                 Data    = item['Data Venda'];
-
-                openItemsList();
+                if (Cliente === 871){
+                    openItemsList();
+                }
             });
     });
 }
