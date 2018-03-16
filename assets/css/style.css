@@ -923,8 +923,7 @@ blockquote {
 }
 
 .module-subtitle {
-  text-align: center;
-  font-size: 16px;
+  text-align: right;
   color: #111;
   margin-bottom: 70px;
 }
@@ -3212,6 +3211,11 @@ section {
   height: 100%;
 }
 
+#D {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
 .Scroll-to-top.visible {
   opacity: 1;
   transform: translateY(0);
@@ -3904,4 +3908,8 @@ h1.team-h1 {
 
 .grey-color {
   color: rgba(0,0,0,0.5);
+}
+
+.align-right {
+  text-align: right;
 }
