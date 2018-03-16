@@ -617,12 +617,12 @@ a,
 }
 
 .landing-image-text {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 0px;
 }
 
 .landing-image-text h2 {
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 
@@ -874,7 +874,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ol, ul, blockquote {
-  margin: 0 0 20px;
+  margin: 0 0 65px;
 }
 
 blockquote {
@@ -1351,7 +1351,7 @@ General Styles - Owlcarousel
 .transaction-section {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 .titan-title-size-1 {
@@ -1556,7 +1556,7 @@ Google map
 .alt-features-item {
   position: relative;
   padding-left: 55px;
-  margin: 65px 0 0 0;
+  margin: 85px 0 0 0;
 }
 
 .alt-features-icon {
@@ -3198,12 +3198,13 @@ section {
 
 #A {
   background-color: #FFFFFF;
-
+  height: 100%;
+  margin-bottom: 100px;
 }
 
 #B {
-  background-color: rgb(254, 126, 1);
-  height: 600px;
+  height: 100%;
+    margin-bottom: 100px;
 }
 
 #C {
@@ -3423,10 +3424,11 @@ h1.team-h1 {
   max-width: 200px;
   font-family: sans-serif;
   letter-spacing: -1px;
+  font-size: 20px;
 }
 
 .team-member h3 {
-  color: rgb(0, 138, 177);
+  color: rgba(0,0,0,0.5);
 }
 
 .email {
@@ -3442,7 +3444,7 @@ h1.team-h1 {
   border-radius: 50%;
   text-align: center;
   margin: auto;
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
   transition: 0.1s transform ease-in-out;
 }
@@ -3495,4 +3497,61 @@ h1.team-h1 {
     padding-top: 50px;
 }
 
+.margin-top {
+  margin-top: 80px;
+}
 
+.feature-image {
+  max-width: 70%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.orange-bg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(254, 126, 1);
+    color: white;
+    height: 360px;
+}
+
+@media (max-width: 650px) {
+    .orange-bg {
+        height: 100%;
+    }
+}
+
+.no-bg {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title-header {
+    font-size: 50px;
+    color: rgb(254, 126, 1);
+}
+
+@media(max-width: 750px) {
+    .title-header {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .center-block {
+        margin-top: -15px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.image-110 {
+  max-width: 110%;
+  height: auto;
+}
+
+.image-80 {
+    max-width: 80%;
+    height: auto;
+}

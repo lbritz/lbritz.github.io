@@ -21,6 +21,7 @@
     <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" rel="script">
 
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -48,110 +49,15 @@
     <section class="transaction-section home-fade home-full-height colored">
         <div class="container transaction-page-header">
             <h3>Hello, Person's name</h3>
-            <h5>*Dash with total spent each time the customer goes to mkt*</h5>
+            <h4>You can check your transactions below ;)</h4>
         </div>
     </section>
     <div class="container transaction-history">
-        <ul class="timeline">
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge info"></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>R$40,00</p>
-                        <p>11/03/2018</p>
-                    </div>
-                </div>
-            </li>
+        <ul class="timeline" id="transactions">
         </ul>
     </div>
 </main>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="assets/lib/jquery/dist/jquery.js"></script>
 <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/lib/wow/dist/wow.js"></script>
@@ -165,6 +71,6 @@
 <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/downloadButton.js"></script>
+<script src="assets/js/buyingHistory.js"></script>
 </body>
 </html>
