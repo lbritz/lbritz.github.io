@@ -40,12 +40,13 @@ $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
 
             var address = document.createElement("h6");
             address.classList.add("transaction-body-info");
-            title.classList.add("quicksand");
+            address.classList.add("quicksand");
+            address.classList.add("grey-color");
             address.appendChild(document.createTextNode(filialEndereco));
 
             var transactionCost = document.createElement("h6");
             transactionCost.classList.add("transaction-body-info");
-            title.classList.add("quicksand");
+            transactionCost.classList.add("quicksand");
             transactionCost.appendChild(document.createTextNode('R$' + parseFloat(valorTotal.toFixed(2))));
 
             var date = document.createElement("h6");
