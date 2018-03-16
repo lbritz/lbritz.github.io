@@ -205,7 +205,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     element.appendChild(descriptionList);
 }
 
-function filterItemCard(){
+function filterItemCard(e){
     /*
     removechildren;
 
