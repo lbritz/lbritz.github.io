@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 
-@prim: rgb(240, 145, 63);
+@prim: rgb(238, 123, 33);
 
 *{
   box-sizing: border-box;
@@ -81,7 +81,7 @@ form{
     background-color: white;
     border: 0;
     padding: 10px 15px;
-    color: @prim;
+    color: @prim !important;
     border-radius: 3px;
     width: 250px;
     cursor: pointer;
@@ -92,5 +92,17 @@ form{
       background-color: rgb(245, 247, 249);
       width: 255px;
     }
+  }
+}
+
+.transparency {
+  background-color: rgba(245, 247, 249, 0.7) !important;
+}
+
+.orange-font {
+  color: @prim;
+  &:hover{
+    color: #be601d;
+    width: 255px;
   }
 }

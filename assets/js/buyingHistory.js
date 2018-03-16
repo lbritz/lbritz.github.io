@@ -32,6 +32,7 @@ $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
 
             var title = document.createElement("h4");
             title.classList.add("timeline-title");
+            title.classList.add("quicksand");
             title.appendChild(document.createTextNode(filialNome));
 
             var body = document.createElement("div");
@@ -39,14 +40,17 @@ $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
 
             var address = document.createElement("h6");
             address.classList.add("transaction-body-info");
+            title.classList.add("quicksand");
             address.appendChild(document.createTextNode(filialEndereco));
 
             var transactionCost = document.createElement("h6");
             transactionCost.classList.add("transaction-body-info");
+            title.classList.add("quicksand");
             transactionCost.appendChild(document.createTextNode('R$' + parseFloat(valorTotal.toFixed(2))));
 
             var date = document.createElement("h6");
             date.classList.add("transaction-body-info");
+            title.classList.add("quicksand");
             date.appendChild(document.createTextNode(data));
 
             heading.appendChild(title);
@@ -72,25 +76,4 @@ $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
         }
         prevCupom = item.Cupom;
     });
-});
-
-/**
- * Created by singhdi on 2014-07-26.
- */
-var app = angular.module("ionicInfiniteScrollApp",['ionic']);
-
-app.controller("InfiniteAppCntrl",function($scope){
-    $scope.moredata = false;
-    $scope.loadMoreData=function()
-    {
-        $scope.items.push({id: $scope.items.length});
-        if($scope.items.length==100)
-        {
-            $scope.moredata=true;
-        }
-        $scope.$broadcast('scroll.infiniteScrollComplete');
-    };
-
-    $scope.items=[];
-
 });
