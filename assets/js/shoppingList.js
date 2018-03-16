@@ -73,17 +73,27 @@ function openItemsList(){
   
 }
 
-/*          <dl class="product-card">
- 
-                <dt><i class="fa fa-shopping-cart"></i> Produto</dt>
-                <dd>Descrição realmente longa para testar o que acontece com ela</dd>
 
-                <dt><i class="fa fa-cubes"></i> Quantidade</dt>
-                <dd>33</dd>
 
-                <dt><i class="fa fa-credit-card"></i> Preço Venda </dt>
-                <dd>44</dd>
 
-                <dt><i class="fa fa-tag"></i> Preço produto</dt>
-                <dd>55</dd>
-            </dl>*/
+
+
+
+function teste(){
+
+     $.getJSON("../assets/data/segmentBCustomerData.json", function (data) {
+        var Cliente;
+        var Filial;
+        var Segment;
+        var Data;
+
+        $.each(data, function(i, item){
+                Cliente = item['Cliente'];
+                Filial  = item['Filial'];
+                Segment = item['Segment'];
+                Data    = item['Data Venda'];
+
+                openItemsList
+            });
+    });
+}
