@@ -51,13 +51,13 @@
             <h5>*Dash with total spent each time the customer goes to mkt*</h5>
         </div>
     </section>
-    <div class="container transaction-history">
+    <div class="transaction-history">
         <ul class="timeline">
-            <li class="timeline-inverted">
+            <li class="timeline-inverted selected-purchase">
                 <div class="timeline-badge info"></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Market ACME</h4>
+                        <h4 class="timeline-title"><a href="#" onclick="openItemsList()">Market ACME</a></h4>
                     </div>
                     <div class="timeline-body">
                         <p>R$40,00</p>
@@ -150,6 +150,11 @@
                 </div>
             </li>
         </ul>
+
+        <div id="product-list">
+           
+        </div>
+        
     </div>
 </main>
 <script src="assets/lib/jquery/dist/jquery.js"></script>
@@ -166,5 +171,6 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/downloadButton.js"></script>
+<script src="assets/js/shoppingList.js"></script>
 </body>
 </html>
