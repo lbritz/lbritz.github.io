@@ -22,40 +22,44 @@ function constructElement(type, className, id){
 }
 
 
-function openItemsList(){
+function openItemsList(sProduct, sProductDescription, sSellingPrice, sProductPrice){
     let descriptionList = constructElement("dl", "product-card");
 
     let part1dt = constructElement("dt", "product-card");
-    let text1    = document.createTextNode("1233455");
+    let text1   = document.createTextNode("Product");
     let part1i  = constructElement("i", "fa fa-shopping-cart");
     part1dt.appendChild(part1i);
     part1dt.appendChild(text1);
 
     let part1dd = constructElement("dd", "product-card");
+    part1dd.appendChild(sProduct);
 
     let part2dt = constructElement("dt", "product-card");
-    let text2    = document.createTextNode("1233455");
+    let text2   = document.createTextNode("Description");
     let part2i  = constructElement("i", "fa fa-cubes");
     part2dt.appendChild(part2i);
     part2dt.appendChild(text2);
 
     let part2dd = constructElement("dd", "product-card");
+    part2dd.appendChild(sProductDescription);
 
     let part3dt = constructElement("dt", "product-card");
-    let text3    = document.createTextNode("1233455");
+    let text3   = document.createTextNode("Selling Price");
     let part3i  = constructElement("i", "fa fa-credit-card");
     part3dt.appendChild(part3i);
     part3dt.appendChild(text3);
 
     let part3dd = constructElement("dd", "product-card");
+    part3dd.appendChild(sSellingPrice);
 
     let part4dt = constructElement("dt", "product-card");
-    let text4    = document.createTextNode("1233455");
+    let text4   = document.createTextNode("Product Price");
     let part4i  = constructElement("i", "fa fa-tag");
     part4dt.appendChild(part4i);
     part4dt.appendChild(text4);
 
     let part4dd = constructElement("dd", "product-card");
+    part4dd.appendChild(sProductPrice);
 
 
     descriptionList.appendChild(part1dt);
