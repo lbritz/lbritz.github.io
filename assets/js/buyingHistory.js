@@ -45,7 +45,7 @@ $(document).ready(function () {
 
                 var link = document.createElement("a");
                 link.href="#";
-                link.onclick= filterItemCard();
+                link.onclick= filterItemCard;
                 link.appendChild(title);
 
                 var body = document.createElement("div");
