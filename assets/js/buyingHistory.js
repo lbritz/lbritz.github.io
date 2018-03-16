@@ -67,7 +67,7 @@ $(document).ready(function () {
                 title.classList.add("quicksand");
                 date.appendChild(document.createTextNode(data));
 
-                heading.appendChild(title);
+                heading.appendChild(link);
 
                 body.appendChild(address);
                 body.appendChild(transactionCost);
