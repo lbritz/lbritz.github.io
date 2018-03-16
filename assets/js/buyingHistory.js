@@ -204,8 +204,9 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
 
     element.appendChild(descriptionList);
 }
-/*
-function filterItemCard(e){
+
+function filterItemCard(){
+    /*
     removechildren;
 
     var cupom = ;
@@ -216,4 +217,6 @@ function filterItemCard(e){
             crateItemCard(aItems[i].product, aItems[i].description, aItems[i].quantity, aItems[i].selling, aItems[i].price);
         }
     }
-}*/
+    */
+    console.log("teste");
+}
