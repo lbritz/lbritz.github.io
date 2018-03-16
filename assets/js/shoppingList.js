@@ -93,7 +93,7 @@ function teste(){
                 Segment = item['Segment'];
                 Data    = item['Data Venda'];
 
-                openItemsList
+                openItemsList();
             });
     });
 }
