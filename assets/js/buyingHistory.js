@@ -115,7 +115,14 @@ function getShoppingData(){
                 sClient                 = item['Cliente'];
                 sCupom                  = item['Cupom'];
                 if (sClient === 871){
-                    aItems[i] = {Cupom: sCupom, product: sProduct, description: sProductDescription, quantity: sQuantity, selling: sSellingPrice, price: sProductPrice};
+                    aItems.push({
+                        Cupom       : sCupom, 
+                        product     : sProduct, 
+                        description : sProductDescription, 
+                        quantity    : sQuantity, 
+                        selling     : sSellingPrice, 
+                        price       : sProductPrice
+                    });
                 }
             });
     });
@@ -207,8 +214,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
 }
 
 function filterItemCard(e){
-    var cupom = e.currentTarget.parentElement.parentElement.innerText;
-    cupom = cupom.slice(-11);
+    var cupom = e.currentTarget.parentElement.getAttribute("cupom");
 
     /*
     removechildren;
