@@ -36,6 +36,7 @@ $(document).ready(function () {
 
                 var heading = document.createElement("div");
                 heading.classList.add("timeline-heading");
+                heading.setAttribute("cupom",cupom);
 
 
                 var title = document.createElement("h4");
@@ -206,6 +207,9 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
 }
 
 function filterItemCard(e){
+    var cupom = e.currentTarget.parentElement.parentElement.innerText;
+    cupom = cupom.slice(-11);
+
     /*
     removechildren;
 
