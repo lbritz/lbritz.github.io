@@ -224,7 +224,7 @@ function removeAllChidren(domElement){
 
 function filterItemCard(e){
     var lastLink = document.getElementsByClassName("selected-purchase");
-    if (lastLink.lenght()){
+    if (lastLink.length){
         lastLink.classList.remove("selected-purchase");
     }
 
