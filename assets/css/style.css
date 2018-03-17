@@ -3913,3 +3913,157 @@ h1.team-h1 {
 .align-right {
   text-align: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Buying History
+===========================*/
+
+#product-list{
+
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  */
+}
+
+.selected-purchase {
+  color: rgb(254, 126, 1);
+  font-weight: 600;
+}
+
+@media(max-width: 400px){
+
+  .transaction-history {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+  dl {
+    width: 94%;
+    margin: 20px 0% 3% 3%;
+    padding: 1%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+  }
+
+  dt{
+    text-align: left;
+    margin-top: 1em;
+  }
+}
+
+
+
+@media(min-width: 401px){
+
+  .transaction-history {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 3fr;
+}
+
+  dl {
+    width: 94%;
+    margin: 20px 0% 3% 3%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+  }
+
+  dt{
+      text-align: right;
+    }
+}
+
+
+@media(min-width: 1200px){
+
+  .transaction-history {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+  dl {
+    width: 42%;
+    margin: 20px 0% 3% 5%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+  }
+
+  dt{
+    text-align: right;
+  }
+}
+
+@media(min-width: 1600px){
+
+  .transaction-history {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  dl {
+    width: 30%;
+    margin: 20px 1% 2% 2%;
+    padding: .5%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+  }
+
+  dt{
+    text-align: right;
+  }
+}
+
+
+  .transaction-history {
+    background-color: white;
+  }
+
+  dl{
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+    float: left;
+    height: 150px;
+  }
+
+  dt {
+    font-size: 14px;
+    float: left;
+    clear: left;
+  }
+
+
+
+  dd {
+    font-size: 14px;
+    margin: 0 0 0 1em;
+    padding: 0 0 0.5em 0;
+    text-align: justify;
+  }
