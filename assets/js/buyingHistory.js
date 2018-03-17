@@ -61,7 +61,7 @@ $(document).ready(function () {
                 var transactionCost = document.createElement("h6");
                 transactionCost.classList.add("transaction-body-info");
                 transactionCost.classList.add("quicksand");
-                transactionCost.appendChild(document.createTextNode('R$' + parseFloat(valorTotal.toFixed(2))));
+                transactionCost.appendChild(document.createTextNode('R$ ' + parseFloat(valorTotal.toFixed(2))));
 
                 var date = document.createElement("h6");
                 date.classList.add("transaction-body-info");
@@ -179,7 +179,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     part3dt.appendChild(text3);
 
     let part3dd = constructElement("dd", "product-card");
-    part3dd.append(sSellingPrice);
+    part3dd.append('R$ ' + sSellingPrice);
 
     let part4dt = constructElement("dt", "product-card");
     let text4   = document.createTextNode(" Product Price:");
@@ -188,7 +188,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     part4dt.appendChild(text4);
 
     let part4dd = constructElement("dd", "product-card");
-    part4dd.append(sProductPrice);
+    part4dd.append('R$ ' + sProductPrice);
 
 
     descriptionList.appendChild(part2dt);
