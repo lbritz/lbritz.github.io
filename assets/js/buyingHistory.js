@@ -215,7 +215,7 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     element.appendChild(descriptionList);
 }
 
-function removeAllChidren(domElement){
+function removeAllChildren(domElement){
     while (domElement.firstChild) {
         domElement.removeChild(domElement.firstChild);
     }
