@@ -224,7 +224,9 @@ function removeAllChidren(domElement){
 
 function filterItemCard(e){
     var lastLink = document.getElementsByClassName("selected-purchase");
-    lastLink.classList.remove("selected-purchase");
+    if (lastLink != undefined){
+        lastLink.classList.remove("selected-purchase");
+    }
 
 
     var cupom = e.currentTarget.parentElement.getAttribute("cupom");
