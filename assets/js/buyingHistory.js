@@ -215,13 +215,25 @@ function crateItemCard(sProduct, sProductDescription, sQuantity, sSellingPrice, 
     element.appendChild(descriptionList);
 }
 
-function filterItemCard(e){
-    var cupom = e.currentTarget.parentElement.getAttribute("cupom");
+function removeAllChidren(domElement){
+    while (domElement.firstChild) {
+        domElement.removeChild(domElement.firstChild);
+    }
+}
 
-    /*
-    removechildren;    
-    
-    */
+
+function filterItemCard(e){
+    var lastLink = document.getElementsByClassName("selected-purchase");
+    lastLink.classList.remove("selected-purchase");
+
+
+    var cupom = e.currentTarget.parentElement.getAttribute("cupom");
+    e.currentTarget.parentElement.parentElement.classList+=" selected-purchase";
+
+    var parentElement = document.getElementById("product-list");
+
+    removeAllChildren(parentElement);
+
     for (var i=0; i<aItems.length; i++){
         if (aItems[i].Cupom === parseInt(cupom)){
             crateItemCard(aItems[i].product, aItems[i].description, aItems[i].quantity, aItems[i].selling, aItems[i].price);
