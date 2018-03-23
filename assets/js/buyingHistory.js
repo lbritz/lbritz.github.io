@@ -5,7 +5,7 @@ var aItems   = [];
 
 $(document).ready(function () {
 
-    $.getJSON("../assets/data/orderedCustomerData.json", function (data) {
+    $.getJSON("../assets/data/customer_B_correct_data.json", function (data) {
         var cupom;
         var prevCupom;
         var filialNome;
@@ -13,14 +13,18 @@ $(document).ready(function () {
         var data;
         var valorTotal = 0;
         var ul = document.getElementById("transactions");
+        getShoppingData(data);
 
         $.each(data, function(i, item){
             cupom = item.Cupom;
             if (prevCupom === undefined) {
                 valorTotal += item['Valor Venda'];
                 filialNome = item['Filial Nome'];
-                filialEndereco = item['Filial Endereco'];
+                filialEndereco = item['Filial Endereco'] + " - " + item['Filial Cidade'];
                 data = item['Data Venda'];
+                var heading = document.createElement("div");
+                heading.classList.add("timeline-heading");
+                heading.setAttribute("cupom",cupom);
             } else if (cupom === prevCupom) {
                 valorTotal += item['Valor Venda'];
             } else {
@@ -86,18 +90,16 @@ $(document).ready(function () {
                 valorTotal = 0;
                 valorTotal += item['Valor Venda'];
                 filialNome = item['Filial Nome'];
-                filialEndereco = item['Filial Endereco'];
+                filialEndereco = item['Filial Endereco'] + " - " + item['Filial Cidade'];
                 data = item['Data Venda'];
             }
             prevCupom = item.Cupom;
         });
-        getShoppingData();
     });
 });
 
-function getShoppingData(){
+function getShoppingData(data){
 
-    $.getJSON("../assets/data/segmentBCustomerData.json", function (data) {
         var sProduct;
         var sProductDescription;
         var sSellingPrice;
@@ -114,7 +116,6 @@ function getShoppingData(){
             sQuantity               = item['Quantidade'];
             sClient                 = item['Cliente'];
             sCupom                  = item['Cupom'];
-            if (sClient === 871){
                 aItems.push({
                     Cupom       : sCupom,
                     product     : sProduct,
@@ -123,9 +124,7 @@ function getShoppingData(){
                     selling     : sSellingPrice,
                     price       : sProductPrice
                 });
-            }
         });
-    });
 }
 
 
@@ -217,7 +216,6 @@ function filterItemCard(e){
     if (lastLink.length){
         lastLink[0].classList.remove("selected-purchase");
     }
-
 
     var cupom = e.currentTarget.parentElement.getAttribute("cupom");
     e.currentTarget.lastElementChild.classList+=" selected-purchase";
